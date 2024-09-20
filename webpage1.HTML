@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>helllooo world</title>
+    </head>
+    <body>
+        <button type = "button" id="btn">click</button>
+        <input type = "text" id="txtBx">
+        <script>
+            const button=document.getElementById("btn");
+            const text=document.getElementById("txtBx");
+            
+            button.addEventListener("click",function(e){
+                const x = text.value;
+                console.log(x);
+                saveas(x,"file.txt")
+            })
+        </script>
+    </body>
+</html>
